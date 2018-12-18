@@ -1,0 +1,227 @@
+body,html{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    color: #403E40;
+    margin: 0;
+}
+#wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.navbar{
+    position: fixed;
+    width: 100vw;
+    background-color:rgba(51, 51, 51, 0.5);
+}
+.logo{
+    float: left;
+    width: 70vw
+}
+.logo img{
+    width: 4.5rem;
+    padding: 0 4.5rem;
+}
+
+.navi{
+    width: 30vw;
+    float: left;
+}
+#navi .navlist{
+    list-style-type: none;
+    margin: 0.5em;
+    padding: 0;
+}
+.navlist .nav-item {
+    float: left;
+  display: block;
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+}
+.nav-item .nav-link{
+    float: left;
+        color: whitesmoke;
+        text-decoration: none;
+        font-weight: bold;
+}
+.nav-item .nav-link:hover{
+        text-decoration:underline;
+}
+.row{
+    width: 100vw;
+    float: left;
+}
+.banner{
+    background-image: url("../images/business-computer-contemporary-669996.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.banner .hero{
+    margin: auto;
+    color: #fff;
+    width: 50vw;
+    padding: 10px;
+    top: 30vh;
+    text-align: center;
+    position: relative;
+}
+.hero .head{ line-height: 0; font-size: 4.5em;}
+.hero .lead{ font-size: 1.3em;}
+.head{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.lead{
+    font-size: 1.2rem;
+}
+
+.download img{
+    width: 1.5rem; 
+    float: left;
+    margin: 0 1rem;
+}
+.download a{
+    color: #403E40;
+    font-size: 1.3rem;
+}
+.container{
+    width: 1150px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.prog{
+    position: absolute;
+    left:13vw;
+    top: 3px;
+}
+
+/*- mouse animation */
+.scroll-downs {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: whitesmoke;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+
+
+.check{
+    display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check input:checked ~ .checkmark {
+    background-color: #403E40;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } 
+  .bg{
+      background-color: #E5E1E5;
+  } 
+  .img{
+      width: 30%;
+      float: left;
+  }
+  .img img{ width: 300px;}
+  .desc{
+      width: 70%;
+      float: left;
+  }
+  .footer{
+      width: 100vw;
+      float: left;
+      background-color:#403E40;
+      color: whitesmoke;
+      text-align: center;
+  }
+  .footer #linkedin{
+      color: whitesmoke;
+      font-size: 3rem;
+      font-weight: bold;
+  }
+  .footer #linkedin img{
+      width: 3rem;
+      padding: 1rem 1rem 0;
+  }
